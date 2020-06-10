@@ -5,8 +5,6 @@ from predict import predicted_results
 
 app = FastAPI()
 
-img_path = "dog.jpg"
-
 pymodel = models.resnet101(pretrained=True)
 
 # query parameter http://127.0.0.1:8000/predict/?img_path=0
